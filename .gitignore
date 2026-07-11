@@ -1,0 +1,25 @@
+# Gradle
+.gradle/
+build/
+
+# Dev runs
+run/
+runs/
+logs/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+
+# Compile-against jars: other mods' property (ARR / their own licenses).
+# NOT redistributed here - see README "Building" for where to get them.
+libs/*.jar
+
+# OS
+Thumbs.db
+.DS_Store

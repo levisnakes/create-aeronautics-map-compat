@@ -1,0 +1,56 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+logoFile="icon.png"
+authors="levisnakes"
+credits="Ships come from Create: Aeronautics and its Sable engine. Map markers use Xaero's Minimap."
+displayURL="https://modrinth.com/mod/create-aeronautics-map-compat"
+description='''
+Ship radar and map integration for Create: Aeronautics.
+
+Draws every ship directly on Xaero's Minimap and World Map as a native, live-moving map icon - the same way Xaero renders its own radar. Not waypoints: nothing appears in your waypoint list, nothing renders in the world, markers exist only in map views. Each ship's last-known position is remembered, so you always know where you parked your airship.
+
+Optional server side: install it on a server (single-player counts) and every player sees a shared, persistent radar of all ships - including far-away and other players' ships. Not required on either side.
+
+/aeroradar in-game for commands.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="sable"
+    type="required"
+    versionRange="[1.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="xaerominimap"
+    type="optional"
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="CLIENT"
+
+[[dependencies.${mod_id}]]
+    modId="xaeroworldmap"
+    type="optional"
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="CLIENT"
