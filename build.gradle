@@ -52,7 +52,9 @@ dependencies {
         'libs/sable-neoforge-1.21.1-1.2.2.jar',
         'libs/sable-companion-common-1.21.1-1.6.0.jar',
         'libs/xaerominimap-neoforge-1.21.1-25.3.13.jar',
-        'libs/xaeroworldmap-neoforge-1.21.1-1.40.16.jar'
+        'libs/xaeroworldmap-neoforge-1.21.1-1.40.16.jar',
+        // Extracted from journeymap-neoforge's META-INF/jarjar (see README "Building").
+        'libs/journeymap-api-neoforge-2.0.0-1.21.1.jar'
     )
 }
 

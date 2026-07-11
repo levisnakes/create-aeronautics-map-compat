@@ -4,9 +4,10 @@
 
 Initial release.
 
-- Ships drawn as native, live-moving map icons on Xaero's Minimap and fullscreen
-  World Map — the same rendering path as Xaero's own radar. Map views only: no
-  waypoint-list entries, no in-world beacons, nothing written to waypoint files.
+- Ships drawn as native, live-moving map icons on Xaero's Minimap, Xaero's
+  fullscreen World Map and JourneyMap (minimap, fullscreen and webmap). Map views
+  only: no waypoint-list entries, no in-world beacons, nothing written to the map
+  mods' files.
 - Last-known / parked memory: when a ship unloads or you step off it, a gold
   hollow-center icon stays at its last position (persists across relogs).
 - Connected sub-levels (bearing craft, trailers) merge into one icon with a stable

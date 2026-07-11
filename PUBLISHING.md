@@ -12,7 +12,7 @@ actual submit yourself at <https://modrinth.com/> → **Create a project**.
 |---|---|
 | **Name** | Create Aeronautics Map Compat |
 | **Slug / URL** | `create-aeronautics-map-compat` (already set as `displayURL` in the jar) |
-| **Summary** | Create: Aeronautics ships as native live icons on Xaero's Minimap & World Map — no waypoints — plus parked-ship memory and an optional shared server-side radar. |
+| **Summary** | Create: Aeronautics ships as native live icons on Xaero's Minimap/World Map & JourneyMap — no waypoints — plus parked-ship memory and an optional shared server-side radar. |
 | **Description** | Paste the contents of `MODRINTH.md` |
 | **Categories** | Utility, Transportation, Management |
 | **Environments** | Client: **Required** · Server: **Optional** |
@@ -36,6 +36,7 @@ actual submit yourself at <https://modrinth.com/> → **Create a project**.
 ### Version dependencies (add on the version page)
 - **Create: Aeronautics** (`create-aeronautics`) — **Required**
 - **Xaero's Minimap** (`xaeros-minimap`) — **Optional**
+- **JourneyMap** (`journeymap`) — **Optional**
 
 > Sable ships inside Create: Aeronautics, so it doesn't need a separate dependency.
 

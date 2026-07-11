@@ -13,7 +13,7 @@ displayURL="https://modrinth.com/mod/create-aeronautics-map-compat"
 description='''
 Ship radar and map integration for Create: Aeronautics.
 
-Draws every ship directly on Xaero's Minimap and World Map as a native, live-moving map icon - the same way Xaero renders its own radar. Not waypoints: nothing appears in your waypoint list, nothing renders in the world, markers exist only in map views. Each ship's last-known position is remembered, so you always know where you parked your airship.
+Draws every ship directly on Xaero's Minimap / World Map and JourneyMap as a native, live-moving map icon - the same way the map mods render their own radar. Not waypoints: nothing appears in your waypoint list, nothing renders in the world, markers exist only in map views. Each ship's last-known position is remembered, so you always know where you parked your airship.
 
 Optional server side: install it on a server (single-player counts) and every player sees a shared, persistent radar of all ships - including far-away and other players' ships. Not required on either side.
 
@@ -50,6 +50,13 @@ Optional server side: install it on a server (single-player counts) and every pl
 
 [[dependencies.${mod_id}]]
     modId="xaeroworldmap"
+    type="optional"
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="CLIENT"
+
+[[dependencies.${mod_id}]]
+    modId="journeymap"
     type="optional"
     versionRange="[0,)"
     ordering="AFTER"

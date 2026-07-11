@@ -1,11 +1,12 @@
 # Create Aeronautics Map Compat
 
-**Put your Create: Aeronautics ships on Xaero's map — and never lose your airship again.**
+**Put your Create: Aeronautics ships on the map — Xaero's *and* JourneyMap — and
+never lose your airship again.**
 
-No mod puts your ship (or other players' ships) on Xaero's Minimap / World Map, and
-nothing remembers where you parked. This fixes that. Ships are drawn **directly on
-the map** as native, live-moving icons — the same way Xaero renders its own radar —
-so *"where's my airship?"* finally has an answer.
+No mod puts your ship (or other players' ships) on Xaero's Minimap / World Map or
+JourneyMap, and nothing remembers where you parked. This fixes that. Ships are drawn
+**directly on the map** as native, live-moving icons — the same way the map mods
+render their own radar — so *"where's my airship?"* finally has an answer.
 
 Client-side is all you need. Add it to the server (or play single-player) for a
 shared, whole-server ship radar.
@@ -15,13 +16,19 @@ shared, whole-server ship radar.
 ## Features
 
 ### 🛰️ Native map icons — not waypoints
-Every ship appears as a colored diamond icon on Xaero's **Minimap** and the
-fullscreen **World Map**, moving in real time, with its name labelled on the world
-map. It's a pure map visual, exactly like Xaero's entity radar:
+Every ship appears as a colored diamond icon, moving in real time, on whichever map
+mod you use:
+
+- **Xaero's Minimap** + fullscreen **World Map** (via the map element API — the same
+  path as Xaero's entity radar)
+- **JourneyMap** — minimap, fullscreen map and webmap (via JourneyMap's official
+  plugin API, as marker overlays)
+
+It's a pure map visual:
 
 - ❌ no entries in your waypoint list
 - ❌ no beacon beams or floating labels in the world
-- ❌ nothing ever written to your Xaero waypoint files
+- ❌ nothing ever written to your map mod's files
 - ✅ icons exist **only in map views**
 
 ### ⚓ Never lose a ship
@@ -74,8 +81,10 @@ Icon colours: **aqua** = loaded ship · **gold, hollow center** = last-known/par
 - **NeoForge 1.21.1** (21.1.0+)
 - **[Create: Aeronautics](https://modrinth.com/mod/create-aeronautics)** + its Sable
   engine — this is where ships come from (required).
-- **[Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap)** — *optional*, needed
-  to see the icons. **Xaero's World Map** is supported on top of it.
+- A map mod to see the icons — any of these, all *optional*:
+  - **[Xaero's Minimap](https://modrinth.com/mod/xaeros-minimap)** (+ **Xaero's
+    World Map** on top of it)
+  - **[JourneyMap](https://modrinth.com/mod/journeymap)**
 
 ## Environment
 
@@ -85,5 +94,6 @@ Icon colours: **aqua** = loaded ship · **gold, hollow center** = last-known/par
 
 ---
 
-*Not affiliated with Create: Aeronautics or Xaero. Ship data comes from Aeronautics'
-Sable engine; icons are drawn through Xaero's map element API.*
+*Not affiliated with Create: Aeronautics, Xaero or JourneyMap. Ship data comes from
+Aeronautics' Sable engine; icons are drawn through Xaero's map element API and
+JourneyMap's plugin API.*
