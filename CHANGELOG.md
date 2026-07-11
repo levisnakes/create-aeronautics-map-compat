@@ -12,7 +12,8 @@ Initial release.
   hollow-center icon stays at its last position (persists across relogs).
 - Connected sub-levels (bearing craft, trailers) merge into one icon with a stable
   id, labelled with the ship's real name (or `Ship-xxxx` until you name it). Names
-  render on a dark plate on the world map so they stay readable over any terrain.
+  render at full size on a dark backing plate, on both Xaero's world map and
+  JourneyMap, so they stay readable over any terrain.
 - Optional server side: install on a server (single-player counts) for a shared,
   persistent, whole-server radar that shows far-away and other players' ships, with
   server-synced names. Falls back to a local scan when the server doesn't have it,
