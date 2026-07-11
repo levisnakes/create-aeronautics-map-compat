@@ -100,6 +100,8 @@ public final class JourneyMapCompat implements IClientPlugin {
                         .setOverlayGroupName("Ships")
                         .setTextProperties(new TextProperties()
                                 .setColor(0xFFFFFF)
+                                .setBackgroundColor(0x000000)
+                                .setBackgroundOpacity(0.6f)
                                 .setFontShadow(true)
                                 .setScale(1.0f)
                                 .setMinZoom(1));

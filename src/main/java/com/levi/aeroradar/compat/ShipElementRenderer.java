@@ -91,11 +91,12 @@ public final class ShipElementRenderer extends MinimapElementRenderer<ShipTracke
         }
 
         if (location == MinimapElementRenderLocation.WORLD_MAP) {
-            pose.pushPose();
-            pose.translate(0, r + 3, 0);
-            pose.scale(0.65f, 0.65f, 1.0f);
-            graphics.drawCenteredString(font, element.name(), 0, 0, 0xFFFFFFFF);
-            pose.popPose();
+            String name = element.name();
+            int w = font.width(name);
+            int y = r + 4;
+            // Dark plate behind the label so it stays readable over any map colour.
+            graphics.fill(-w / 2 - 2, y - 1, w / 2 + 2, y + font.lineHeight, 0xC0000000);
+            graphics.drawCenteredString(font, name, 0, y, 0xFFFFFFFF);
         }
         // Flush so our shapes don't bleed into Xaero's own batched rendering.
         graphics.flush();
