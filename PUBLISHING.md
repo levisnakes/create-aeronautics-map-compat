@@ -12,7 +12,7 @@ actual submit yourself at <https://modrinth.com/> → **Create a project**.
 |---|---|
 | **Name** | Create Aeronautics Map Compat |
 | **Slug / URL** | `create-aeronautics-map-compat` (already set as `displayURL` in the jar) |
-| **Summary** | Create: Aeronautics ships as native live icons on Xaero's Minimap/World Map & JourneyMap — no waypoints — plus parked-ship memory and an optional shared server-side radar. |
+| **Summary** | Puts your Create: Aeronautics ships on Xaero's Minimap/World Map and JourneyMap as live icons (not waypoints), remembers where they're parked, and can run a shared radar server-side. |
 | **Description** | Paste the contents of `MODRINTH.md` |
 | **Categories** | Utility, Transportation, Management |
 | **Environments** | Client: **Required** · Server: **Optional** |
